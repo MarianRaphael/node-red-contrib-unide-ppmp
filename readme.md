@@ -97,7 +97,7 @@ The main purpose of the machine message format is to allow devices and integrato
 
 [See schema](/schemas/v2/message_schema.md)
 
-!<img src="/images/v2/messagePayload.svg" title="" alt="" data-align="center">
+<img src="/images/v2/messagePayload.svg" title="" alt="" data-align="center">
 
 ##### Example Machine Message v2
 
