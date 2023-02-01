@@ -127,19 +127,19 @@ The main purpose of the machine message format is to allow devices and integrato
 ```json
 {
   "content-spec": "urn:spec://eclipse.org/unide/machine-message#v3",
-  "device": { 
-    "id": "2ca5158b-8350-4592-bff9-755194497d4e" 
+  "device": {
+    "id": "2ca5158b-8350-4592-bff9-755194497d4e"
   },
   "messages": [
-    { 
-      "ts": "2023-02-01T19:44:58.969Z", 
+    {
+      "ts": "2023-02-01T19:44:58.969Z",
       "code": "testCode"
     }
   ]
 }
 ```
 
-## Process Message Payload
+### Process Message Payload
 
 The process message is the format to exchange data out of discrete processes. It also allows to transport process information, part information and measurement data for each phase of the process
 
@@ -151,9 +151,28 @@ The process message is the format to exchange data out of discrete processes. It
 
 ##### Example Process Message v2
 
-...
+```json
+{
+  "content-spec": "urn:spec://eclipse.org/unide/process-message#v2",
+  "device": { 
+    "deviceID": "2ca5158b-8350-4592-bff9-755194497d4e" 
+  },
+  "process": { 
+    "ts": "2023-02-01T19:48:30.150Z" 
+  },
+  "measurements": [
+    {
+      "ts": "2023-02-01T19:48:30.150Z",
+      "series": {
+        "force": [0.8493, 0.566, 5455],
+        "pressure": [0.8493, 0.566, 5455]
+      }
+    }‚
+  ]
+}
+```
 
-#### Version 3
+#### Version 3‚
 
 [See schema](/schemas/v3/process_schema.md)
 
@@ -161,4 +180,23 @@ The process message is the format to exchange data out of discrete processes. It
 
 ##### Example Process Message v3
 
-....
+```json
+{
+  "content-spec": "urn:spec://eclipse.org/unide/process-message#v3",
+  "device": {
+    "id": "2ca5158b-8350-4592-bff9-755194497d4e"
+  },
+  "process": {
+    "ts": "2023-02-01T19:47:17.170Z"
+  },
+  "measurements": [
+    {
+      "ts": "2023-02-01T19:47:17.170Z",
+      "series": {
+        "force": [0.8493, 0.566, 5455],
+        "pressure": [0.8493, 0.566, 5455]
+      }
+    }
+  ]
+}
+```
