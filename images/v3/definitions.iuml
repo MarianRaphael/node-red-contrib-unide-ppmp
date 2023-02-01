@@ -1,0 +1,109 @@
+@startuml
+
+skinparam class {
+	BorderColor black
+	FontColor #50237f
+	BackgroundColor #f5f5f5
+	ArrowColor black
+}
+hide class circle
+
+skinparam stereotype {
+	CBackgroundColor white
+	EBackgroundColor white
+}
+
+skinparam legend {
+	BorderColor white
+	BackgroundColor white
+}
+
+class Device {
+	id: String
+	mode[0..1]: String
+	state[0..1]: DeviceState
+	additionalData[0..1]: Object
+}
+
+class Measurement {
+	code[0..1]: String
+	context[0..1]: ContextList
+	result[0..1]: Result
+	series: Series
+	ts: Date
+	additionalData[0..1]: Object
+}
+
+class Context {
+	limits[0..1]: Limits
+	namespace[0..1]: String
+	type[0..1]: ValueType
+	unit[0..1]: String
+	additionalData[0..1]: Object
+}
+
+class Limits {
+	lowerError[0..1]: Float | [Float]
+	lowerWarn[0..1]: Float | [Float]
+	target[0..1]:  Float | [Float]
+	upperError[0..1]: Float | [Float]
+	upperWarn[0..1]: Float | [Float]
+}
+
+class Series {
+	time[0..1]: [Number]
+	<values>[1..*]: [Boolean | Number | String]
+}
+
+class Part {
+	code[0..1]: String
+	id[0..1]: String
+	type[0..1]: PartType
+	typeId[0..1]: String
+	result[0..1]: Result
+	additionalData[0..1]: Object
+}
+
+enum DeviceState {
+	OK
+	INFO
+	WARN
+	ERROR
+	UNKNOWN
+}
+
+enum Result {
+	OK
+	NOK
+	UNKNOWN
+}
+
+enum PartType {
+	SINGLE
+	BATCH
+}
+
+enum ValueType {
+	BASE64
+	BOOLEAN
+	NUMBER
+	OTHER
+	REF
+	STRING
+}
+
+Measurement "1" *-- "0..1" Context : ContextList
+Context "1" -- "0..*" Limits
+
+
+sprite $aggregation jar:archimate/aggregation
+sprite $composition jar:archimate/composition
+sprite $specialisation jar:archimate/specialisation
+sprite $association jar:archimate/association
+sprite $object      jar:archimate/object
+
+legend right
+<img:legend.svg>
+endlegend
+
+@enduml

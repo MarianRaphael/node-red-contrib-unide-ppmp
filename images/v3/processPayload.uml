@@ -1,0 +1,58 @@
+@startuml
+!include definitions.iuml
+
+class ProcessPayload {
+	content-spec: String
+	device: Device
+	measurements: ProcessMeasurement
+	part[0..1]: Part
+	process: Process
+}
+
+class Process {
+	externalId[0..1]: String
+	program[0..1]: Program
+	result[0..1]: Result
+	ts: Date
+	additionalData[0..1]: Object
+}
+
+class ProcessMeasurement {
+	code[0..1]: String
+	context[0..1]: ContextList
+	name[0..1]: String
+	phase[0..1] ; String
+	result[0..1]: Result
+	series: Series
+	specialValues[0..1]: SpecialValues
+	ts: Date
+	additionalData[0..1]: Object
+}
+
+class Program {
+	id: String
+	lastChangeDate[0..1]: Date
+	name[0..1]: String
+	additionalData[0..1]: Object
+}
+
+class SpecialValue {
+	time[0..1]: Number
+	name[0..1]: String
+	value: <String, Boolean | Number | String>
+}
+
+hide Measurement
+
+ProcessPayload -- Device
+ProcessPayload -- Part
+ProcessPayload -- Process
+ProcessPayload "1" o-- "0..*" ProcessMeasurement: Measurements
+
+Process -- Program
+
+ProcessMeasurement -- Series
+ProcessMeasurement "1" *-- "0..1" Context : ContextList
+
+ProcessMeasurement "1" o-- "0..*" SpecialValue: SpecialValues
+@enduml

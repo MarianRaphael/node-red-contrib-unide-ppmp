@@ -1,0 +1,30 @@
+<script type="text/html" data-template-name="PPMP-Message">
+    <div class="form-row">
+        <label for="node-input-version"><i class="fa fa-tag"></i> Version</label>
+        <select type="text" id="node-input-version" placeholder="Select version">
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+    </div>
+    <div class="form-row">
+        <label for="node-input-deviceId"><i class="fa fa-tag"></i> Device ID</label>
+        <input type="text" id="node-input-deviceId" placeholder="Enter device ID">
+    </div>
+</script>
+<script>
+    RED.nodes.registerType("PPMP-Message",{
+        category: "function",
+        color:"rgb(204, 255, 204)",
+        icon: "function.svg",
+        defaults: {
+            name: {value:""},
+            version: {value:"3", required:true},
+            deviceId: {value:"", required:true},
+            inputs: {value:1, required:true},
+            outputs: {value:1, required:true}
+        },
+        label: function() {
+            return this.name||"PPMP-Message";
+        }
+    });
+</script>

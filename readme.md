@@ -1,4 +1,5 @@
 # Node-RED PPMP node
+
 [![platform](https://img.shields.io/badge/platform-Node--RED-red)](https://nodered.org)
 ![NPM version](https://badge.fury.io/js/node-red-dashboard.svg)
 ![NPM](https://img.shields.io/npm/l/node-red-dashboard)
@@ -12,6 +13,10 @@ The Node-RED-PPMP requires [Node-RED](https://nodered.org) to be installed.
 To install the stable version use the `Menu - Manage palette` option and search for `node-red-unide-ppmp`, or run the following command in your Node-RED user directory - typically `~/.node-red`:
 
     npm i node-red-
+
+## Exampels
+
+See also [Exampels](/exampels/)
 
 ## Production Performance Management Protocol (PPMP)
 
@@ -31,7 +36,7 @@ The measurement message is the format to exchange simple (non-structured, non-co
 
 [See schema](/schemas/v2/measurement_schema.md)
 
-##### Example
+##### Example - Measurement v2
 
 ```json
 {
@@ -39,19 +44,22 @@ The measurement message is the format to exchange simple (non-structured, non-co
   "device": {
     "deviceID": "a4927dad-58d4-4580-b460-79cefd56775b"
   },
-  "measurements": [{
-    "ts": "2002-05-30T09:30:10.123+02:00",
-    "series": {
-      "$_time" : [ 0, 23, 24 ], 
-      "temperature" : [ 45.4231, 46.4222, 44.2432]
+  "measurements": [
+    {
+      "ts": "2002-05-30T09:30:10.123+02:00",
+      "series": {
+        "$_time": [0, 23, 24],
+        "temperature": [45.4231, 46.4222, 44.2432]
+      }
+    },
+    {
+      "ts": "2002-05-30T09:30:10.123+02:00",
+      "series": {
+        "$_time": [0, 13, 26],
+        "pressure": [52.4, 46.32, 44.2432]
+      }
     }
-  }, {
-    "ts": "2002-05-30T09:30:10.123+02:00",
-    "series": {
-      "$_time" : [ 0, 13, 26 ],
-      "pressure" : [ 52.4, 46.32, 44.2432 ]
-    }
-  }]
+  ]
 }
 ```
 
@@ -59,9 +67,25 @@ The measurement message is the format to exchange simple (non-structured, non-co
 
 [See schema](/schemas/v3/measurement_schema.md)
 
-##### Example
+##### Example - Measurement v3
 
-...
+```json
+{
+  "content-spec": "urn:spec://eclipse.org/unide/measurement-message#v3",
+  "device": { 
+    "id": "a4927dad-58d4-4580-b460-79cefd56775b" 
+  },
+  "measurements": [
+    {
+      "ts": "2023-02-01T19:15:28.607Z",
+      "series": { 
+        "time": [0],
+        "temp": [0.8493] 
+      }
+    }
+  ]
+}
+```
 
 ### Machine Message Payload
 
@@ -71,18 +95,20 @@ The main purpose of the machine message format is to allow devices and integrato
 
 [See schema](/schemas/v2/message_schema.md)
 
-##### Example
+##### Example Machine Message v2
 
 ```json
 {
-   "content-spec":"urn:spec://eclipse.org/unide/machine-message#v2",
-   "device": {
-      "deviceID": "2ca5158b-8350-4592-bff9-755194497d4e"
-   },
-   "messages": [{
-    "ts": "2002-05-30T09:30:10.123+02:00",       
-    "code": "190ABT"
-   }]
+  "content-spec": "urn:spec://eclipse.org/unide/machine-message#v2",
+  "device": {
+    "deviceID": "2ca5158b-8350-4592-bff9-755194497d4e"
+  },
+  "messages": [
+    {
+      "ts": "2002-05-30T09:30:10.123+02:00",
+      "code": "190ABT"
+    }
+  ]
 }
 ```
 
@@ -90,7 +116,7 @@ The main purpose of the machine message format is to allow devices and integrato
 
 [See schema](/schemas/v3/message_schema.md)
 
-Example
+##### Example Machine Message v3
 
 Process Message Payload
 

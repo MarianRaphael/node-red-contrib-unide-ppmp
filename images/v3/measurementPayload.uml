@@ -1,0 +1,38 @@
+@startuml
+!include definitions.iuml
+
+class MeasurementPayload {
+	content-spec : String
+	device : Device
+	measurements : TimeMeasurement
+	part[0..1] : Part
+}
+
+class TimeMeasurement {
+	code[0..1]: String
+	context[0..1]: ContextList
+	result[0..1]: Result
+	series: TimeSeries
+	ts: Date
+	additionalData[0..1]: Object
+}
+
+class TimeSeries {
+	time: [Number]
+	<values>[1..*]: [Boolean | Number | String]
+}
+
+hide Measurement
+hide Series
+
+TimeMeasurement "1" *-- "0..1" Context : ContextList
+
+MeasurementPayload -- Device
+MeasurementPayload -- Part
+MeasurementPayload "1" o-right- "1..*" TimeMeasurement : Measurements
+
+Series <|-- TimeSeries
+
+TimeMeasurement -- TimeSeries
+
+@enduml

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="668px" preserveAspectRatio="none" style="width:1028px;height:668px;" version="1.1" viewBox="0 0 1028 668" width="1028px" zoomAndPan="magnify"><defs><filter height="300%" id="f6g7j65rbujtj" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--class Device--><rect fill="#F5F5F5" filter="url(#f6g7j65rbujtj)" height="96.4375" id="Device" style="stroke: #000000; stroke-width: 1.5;" width="140" x="6" y="227.5"/><text fill="#50237F" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="37" x="57.5" y="244.957">Device</text><line style="stroke: #000000; stroke-width: 1.5;" x1="7" x2="145" y1="252.5938" y2="252.5938"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="42" x="12" y="268.0127">id: String</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="84" x="12" y="281.8486">mode[0..1]: String</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="112" x="12" y="295.6846">state[0..1]: DeviceState</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="128" x="12" y="309.5205">additionalData[0..1]: Object</text><line style="stroke: #000000; stroke-width: 1.5;" x1="7" x2="145" y1="315.9375" y2="315.9375"/><!--class Context--><rect fill="#F5F5F5" filter="url(#f6g7j65rbujtj)" height="110.2734" id="Context" style="stroke: #000000; stroke-width: 1.5;" width="140" x="383" y="220.5"/><text fill="#50237F" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="41" x="432.5" y="237.957">Context</text><line style="stroke: #000000; stroke-width: 1.5;" x1="384" x2="522" y1="245.5938" y2="245.5938"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="80" x="389" y="261.0127">limits[0..1]: Limits</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="114" x="389" y="274.8486">namespace[0..1]: String</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="103" x="389" y="288.6846">type[0..1]: ValueType</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="75" x="389" y="302.5205">unit[0..1]: String</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="128" x="389" y="316.3564">additionalData[0..1]: Object</text><line style="stroke: #000000; stroke-width: 1.5;" x1="384" x2="522" y1="322.7734" y2="322.7734"/><!--class Limits--><rect fill="#F5F5F5" filter="url(#f6g7j65rbujtj)" height="110.2734" id="Limits" style="stroke: #000000; stroke-width: 1.5;" width="156" x="375" y="402"/><text fill="#50237F" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="34" x="436" y="419.457">Limits</text><line style="stroke: #000000; stroke-width: 1.5;" x1="376" x2="530" y1="427.0938" y2="427.0938"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="142" x="381" y="442.5127">lowerError[0..1]: Float | [Float]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="144" x="381" y="456.3486">lowerWarn[0..1]: Float | [Float]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="121" x="381" y="470.1846">target[0..1]:  Float | [Float]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="142" x="381" y="484.0205">upperError[0..1]: Float | [Float]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="144" x="381" y="497.8564">upperWarn[0..1]: Float | [Float]</text><line style="stroke: #000000; stroke-width: 1.5;" x1="376" x2="530" y1="504.2734" y2="504.2734"/><!--class Part--><rect fill="#F5F5F5" filter="url(#f6g7j65rbujtj)" height="124.1094" id="Part" style="stroke: #000000; stroke-width: 1.5;" width="140" x="181" y="213.5"/><text fill="#50237F" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="22" x="240" y="230.957">Part</text><line style="stroke: #000000; stroke-width: 1.5;" x1="182" x2="320" y1="238.5938" y2="238.5938"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="82" x="187" y="254.0127">code[0..1]: String</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="187" y="267.8486">id[0..1]: String</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="94" x="187" y="281.6846">type[0..1]: PartType</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="87" x="187" y="295.5205">typeId[0..1]: String</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="87" x="187" y="309.3564">result[0..1]: Result</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="128" x="187" y="323.1924">additionalData[0..1]: Object</text><line style="stroke: #000000; stroke-width: 1.5;" x1="182" x2="320" y1="329.6094" y2="329.6094"/><!--class DeviceState--><rect fill="#F5F5F5" filter="url(#f6g7j65rbujtj)" height="117.1797" id="DeviceState" style="stroke: #000000; stroke-width: 1.5;" width="97" x="794.5" y="11.5"/><ellipse cx="809.5" cy="27.5" fill="#FFFFFF" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M808.3594,28.2969 L808.3594,30.7969 L812.6875,30.7969 L812.6875,29.875 Q812.6875,29.2656 812.9297,29 Q813.1719,28.7344 813.5469,28.7344 Q813.9219,28.7344 814.1563,29 Q814.3906,29.2656 814.3906,29.875 L814.3906,32.5 L806.3906,32.5 Q805.7656,32.5 805.5078,32.2656 Q805.25,32.0313 805.25,31.6406 Q805.25,31.2656 805.5156,31.0313 Q805.7813,30.7969 806.3906,30.7969 L806.6563,30.7969 L806.6563,24.1406 L806.3906,24.1406 Q805.7656,24.1406 805.5078,23.9063 Q805.25,23.6719 805.25,23.2813 Q805.25,22.9063 805.5078,22.6719 Q805.7656,22.4375 806.3906,22.4375 L814.0156,22.4375 L814.0156,25.0313 Q814.0156,25.6406 813.7891,25.8984 Q813.5625,26.1563 813.1719,26.1563 Q812.7969,26.1563 812.5625,25.8984 Q812.3281,25.6406 812.3281,25.0313 L812.3281,24.1406 L808.3594,24.1406 L808.3594,26.5938 L809.8438,26.5938 Q809.8438,25.9375 809.9688,25.75 Q810.2344,25.3438 810.7031,25.3438 Q811.0781,25.3438 811.3125,25.6016 Q811.5469,25.8594 811.5469,26.4688 L811.5469,28.4375 Q811.5469,28.9844 811.4219,29.1719 Q811.1563,29.5625 810.7031,29.5625 Q810.2344,29.5625 809.9688,29.1563 Q809.8438,28.9688 809.8438,28.2969 L808.3594,28.2969 Z "/><text fill="#50237F" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="65" x="823.5" y="32.4102">DeviceState</text><line style="stroke: #000000; stroke-width: 1.5;" x1="795.5" x2="890.5" y1="43.5" y2="43.5"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="15" x="800.5" y="58.9189">OK</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="23" x="800.5" y="72.7549">INFO</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="32" x="800.5" y="86.5908">WARN</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="35" x="800.5" y="100.4268">ERROR</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="53" x="800.5" y="114.2627">UNKNOWN</text><line style="stroke: #000000; stroke-width: 1.5;" x1="795.5" x2="890.5" y1="120.6797" y2="120.6797"/><!--class Result--><rect fill="#F5F5F5" filter="url(#f6g7j65rbujtj)" height="89.5078" id="Result" style="stroke: #000000; stroke-width: 1.5;" width="68" x="927" y="25"/><ellipse cx="942" cy="41" fill="#FFFFFF" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M940.8594,41.7969 L940.8594,44.2969 L945.1875,44.2969 L945.1875,43.375 Q945.1875,42.7656 945.4297,42.5 Q945.6719,42.2344 946.0469,42.2344 Q946.4219,42.2344 946.6563,42.5 Q946.8906,42.7656 946.8906,43.375 L946.8906,46 L938.8906,46 Q938.2656,46 938.0078,45.7656 Q937.75,45.5313 937.75,45.1406 Q937.75,44.7656 938.0156,44.5313 Q938.2813,44.2969 938.8906,44.2969 L939.1563,44.2969 L939.1563,37.6406 L938.8906,37.6406 Q938.2656,37.6406 938.0078,37.4063 Q937.75,37.1719 937.75,36.7813 Q937.75,36.4063 938.0078,36.1719 Q938.2656,35.9375 938.8906,35.9375 L946.5156,35.9375 L946.5156,38.5313 Q946.5156,39.1406 946.2891,39.3984 Q946.0625,39.6563 945.6719,39.6563 Q945.2969,39.6563 945.0625,39.3984 Q944.8281,39.1406 944.8281,38.5313 L944.8281,37.6406 L940.8594,37.6406 L940.8594,40.0938 L942.3438,40.0938 Q942.3438,39.4375 942.4688,39.25 Q942.7344,38.8438 943.2031,38.8438 Q943.5781,38.8438 943.8125,39.1016 Q944.0469,39.3594 944.0469,39.9688 L944.0469,41.9375 Q944.0469,42.4844 943.9219,42.6719 Q943.6563,43.0625 943.2031,43.0625 Q942.7344,43.0625 942.4688,42.6563 Q942.3438,42.4688 942.3438,41.7969 L940.8594,41.7969 Z "/><text fill="#50237F" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="36" x="956" y="45.9102">Result</text><line style="stroke: #000000; stroke-width: 1.5;" x1="928" x2="994" y1="57" y2="57"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="15" x="933" y="72.4189">OK</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="22" x="933" y="86.2549">NOK</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="53" x="933" y="100.0908">UNKNOWN</text><line style="stroke: #000000; stroke-width: 1.5;" x1="928" x2="994" y1="106.5078" y2="106.5078"/><!--class PartType--><rect fill="#F5F5F5" filter="url(#f6g7j65rbujtj)" height="75.6719" id="PartType" style="stroke: #000000; stroke-width: 1.5;" width="80" x="803" y="237.5"/><ellipse cx="818" cy="253.5" fill="#FFFFFF" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M816.8594,254.2969 L816.8594,256.7969 L821.1875,256.7969 L821.1875,255.875 Q821.1875,255.2656 821.4297,255 Q821.6719,254.7344 822.0469,254.7344 Q822.4219,254.7344 822.6563,255 Q822.8906,255.2656 822.8906,255.875 L822.8906,258.5 L814.8906,258.5 Q814.2656,258.5 814.0078,258.2656 Q813.75,258.0313 813.75,257.6406 Q813.75,257.2656 814.0156,257.0313 Q814.2813,256.7969 814.8906,256.7969 L815.1563,256.7969 L815.1563,250.1406 L814.8906,250.1406 Q814.2656,250.1406 814.0078,249.9063 Q813.75,249.6719 813.75,249.2813 Q813.75,248.9063 814.0078,248.6719 Q814.2656,248.4375 814.8906,248.4375 L822.5156,248.4375 L822.5156,251.0313 Q822.5156,251.6406 822.2891,251.8984 Q822.0625,252.1563 821.6719,252.1563 Q821.2969,252.1563 821.0625,251.8984 Q820.8281,251.6406 820.8281,251.0313 L820.8281,250.1406 L816.8594,250.1406 L816.8594,252.5938 L818.3438,252.5938 Q818.3438,251.9375 818.4688,251.75 Q818.7344,251.3438 819.2031,251.3438 Q819.5781,251.3438 819.8125,251.6016 Q820.0469,251.8594 820.0469,252.4688 L820.0469,254.4375 Q820.0469,254.9844 819.9219,255.1719 Q819.6563,255.5625 819.2031,255.5625 Q818.7344,255.5625 818.4688,255.1563 Q818.3438,254.9688 818.3438,254.2969 L816.8594,254.2969 Z "/><text fill="#50237F" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="48" x="832" y="258.4102">PartType</text><line style="stroke: #000000; stroke-width: 1.5;" x1="804" x2="882" y1="269.5" y2="269.5"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="36" x="809" y="284.9189">SINGLE</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="35" x="809" y="298.7549">BATCH</text><line style="stroke: #000000; stroke-width: 1.5;" x1="804" x2="882" y1="305.1719" y2="305.1719"/><!--class ValueType--><rect fill="#F5F5F5" filter="url(#f6g7j65rbujtj)" height="131.0156" id="ValueType" style="stroke: #000000; stroke-width: 1.5;" width="89" x="918.5" y="210"/><ellipse cx="933.5" cy="226" fill="#FFFFFF" rx="11" ry="11" style="stroke: #000000; stroke-width: 1.0;"/><path d="M932.3594,226.7969 L932.3594,229.2969 L936.6875,229.2969 L936.6875,228.375 Q936.6875,227.7656 936.9297,227.5 Q937.1719,227.2344 937.5469,227.2344 Q937.9219,227.2344 938.1563,227.5 Q938.3906,227.7656 938.3906,228.375 L938.3906,231 L930.3906,231 Q929.7656,231 929.5078,230.7656 Q929.25,230.5313 929.25,230.1406 Q929.25,229.7656 929.5156,229.5313 Q929.7813,229.2969 930.3906,229.2969 L930.6563,229.2969 L930.6563,222.6406 L930.3906,222.6406 Q929.7656,222.6406 929.5078,222.4063 Q929.25,222.1719 929.25,221.7813 Q929.25,221.4063 929.5078,221.1719 Q929.7656,220.9375 930.3906,220.9375 L938.0156,220.9375 L938.0156,223.5313 Q938.0156,224.1406 937.7891,224.3984 Q937.5625,224.6563 937.1719,224.6563 Q936.7969,224.6563 936.5625,224.3984 Q936.3281,224.1406 936.3281,223.5313 L936.3281,222.6406 L932.3594,222.6406 L932.3594,225.0938 L933.8438,225.0938 Q933.8438,224.4375 933.9688,224.25 Q934.2344,223.8438 934.7031,223.8438 Q935.0781,223.8438 935.3125,224.1016 Q935.5469,224.3594 935.5469,224.9688 L935.5469,226.9375 Q935.5469,227.4844 935.4219,227.6719 Q935.1563,228.0625 934.7031,228.0625 Q934.2344,228.0625 933.9688,227.6563 Q933.8438,227.4688 933.8438,226.7969 L932.3594,226.7969 Z "/><text fill="#50237F" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="57" x="947.5" y="230.9102">ValueType</text><line style="stroke: #000000; stroke-width: 1.5;" x1="919.5" x2="1006.5" y1="242" y2="242"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="40" x="924.5" y="257.4189">BASE64</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="50" x="924.5" y="271.2549">BOOLEAN</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="42" x="924.5" y="285.0908">NUMBER</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="34" x="924.5" y="298.9268">OTHER</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="19" x="924.5" y="312.7627">REF</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="37" x="924.5" y="326.5986">STRING</text><line style="stroke: #000000; stroke-width: 1.5;" x1="919.5" x2="1006.5" y1="333.0156" y2="333.0156"/><!--class MeasurementPayload--><rect fill="#F5F5F5" filter="url(#f6g7j65rbujtj)" height="96.4375" id="MeasurementPayload" style="stroke: #000000; stroke-width: 1.5;" width="179" x="108.5" y="22"/><text fill="#50237F" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="120" x="138" y="39.457">MeasurementPayload</text><line style="stroke: #000000; stroke-width: 1.5;" x1="109.5" x2="286.5" y1="47.0938" y2="47.0938"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="101" x="114.5" y="62.5127">content-spec : String</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="74" x="114.5" y="76.3486">device : Device</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="167" x="114.5" y="90.1846">measurements : TimeMeasurement</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="71" x="114.5" y="104.0205">part[0..1] : Part</text><line style="stroke: #000000; stroke-width: 1.5;" x1="109.5" x2="286.5" y1="110.4375" y2="110.4375"/><!--class TimeMeasurement--><rect fill="#F5F5F5" filter="url(#f6g7j65rbujtj)" height="124.1094" id="TimeMeasurement" style="stroke: #000000; stroke-width: 1.5;" width="140" x="410" y="8"/><text fill="#50237F" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="104" x="428" y="25.457">TimeMeasurement</text><line style="stroke: #000000; stroke-width: 1.5;" x1="411" x2="549" y1="33.0938" y2="33.0938"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="82" x="416" y="48.5127">code[0..1]: String</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="120" x="416" y="62.3486">context[0..1]: ContextList</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="87" x="416" y="76.1846">result[0..1]: Result</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="89" x="416" y="90.0205">series: TimeSeries</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="37" x="416" y="103.8564">ts: Date</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="128" x="416" y="117.6924">additionalData[0..1]: Object</text><line style="stroke: #000000; stroke-width: 1.5;" x1="411" x2="549" y1="124.1094" y2="124.1094"/><!--class TimeSeries--><rect fill="#F5F5F5" filter="url(#f6g7j65rbujtj)" height="68.7656" id="TimeSeries" style="stroke: #000000; stroke-width: 1.5;" width="210" x="558" y="241"/><text fill="#50237F" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="64" x="631" y="258.457">TimeSeries</text><line style="stroke: #000000; stroke-width: 1.5;" x1="559" x2="767" y1="266.0938" y2="266.0938"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="68" x="564" y="281.5127">time: [Number]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="198" x="564" y="295.3486">&lt;values&gt;[1..*]: [Boolean | Number | String]</text><line style="stroke: #000000; stroke-width: 1.5;" x1="559" x2="767" y1="301.7656" y2="301.7656"/><!--link Context to Limits--><path d="M453,330.843 C453,353.338 453,379.366 453,401.842 " fill="none" id="Context-Limits" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="445.5516" y="352.4589">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="20" x="431.7188" y="391.25">0..*</text><!--link TimeMeasurement to Context--><path d="M470.155,145.205 C466.853,170.09 463.236,197.352 460.178,220.4 " fill="none" id="TimeMeasurement-Context" style="stroke: #000000; stroke-width: 1.0;"/><polygon fill="#000000" points="471.899,132.057,467.1445,137.4787,470.3206,143.9527,475.075,138.531,471.899,132.057" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="66" x="469" y="176.4951">ContextList</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="463.5576" y="153.6665">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="22" x="437.6883" y="209.8154">0..1</text><!--link MeasurementPayload to Device--><path d="M169.704,118.198 C150.065,150.957 124.005,194.426 104.3535,227.205 " fill="none" id="MeasurementPayload-Device" style="stroke: #000000; stroke-width: 1.0;"/><!--link MeasurementPayload to Part--><path d="M210.292,118.198 C217.662,146.495 227.113,182.784 235.053,213.271 " fill="none" id="MeasurementPayload-Part" style="stroke: #000000; stroke-width: 1.0;"/><!--link MeasurementPayload to TimeMeasurement--><path d="M300.783,70 C337.03,70 376.92,70 409.847,70 " fill="none" id="MeasurementPayload-TimeMeasurement" style="stroke: #000000; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="287.614,70,293.614,74,299.614,70,293.614,66,287.614,70" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="86" x="305.75" y="63.4951">Measurements</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="295.616" y="66.8039">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="20" x="381.9569" y="84.2945">1..*</text><!--link TimeMeasurement to TimeSeries--><path d="M534.906,132.057 C567.017,167.764 606.326,211.478 632.863,240.987 " fill="none" id="TimeMeasurement-TimeSeries" style="stroke: #000000; stroke-width: 1.0;"/><!--link DeviceState to Result--><!--link DeviceState to PartType--><!--link PartType to ValueType--><rect fill="#FFFFFF" height="127" rx="5" ry="5" style="stroke: #FFFFFF; stroke-width: 1.0;" width="301" x="716" y="530"/><svg x="722" y="535">	<rect x=".5" y=".5" width="288" height="116.58" rx="5" ry="5" fill="#f5f5f5" stroke="#50237f"/>	<text transform="translate(-504.5 -714.76)" x="514" y="731.38092" fill="#000000" font-family="sans-serif" font-size="10px" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="36">Symbol</text>	<text transform="translate(-504.5 -714.76)" x="556" y="731.38092" fill="#000000" font-family="sans-serif" font-size="10px" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="28">Name</text>	<text transform="translate(-504.5 -714.76)" x="637" y="731.38092" fill="#000000" font-family="sans-serif" font-size="10px" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="56">Description</text>	<text transform="translate(-504.5,-713.5)" x="523" y="749.38092" fill="#000000" font-family="sans-serif" font-size="10px" lengthAdjust="spacingAndGlyphs" textLength="0"/>	<text transform="translate(-504.5 -712.11)" x="556" y="743.95898" fill="#000000" font-family="sans-serif" font-size="10px" lengthAdjust="spacingAndGlyphs" textLength="24">Class</text>	<text transform="translate(-504.5 -712.11)" x="637" y="743.95898" fill="#000000" font-family="sans-serif" font-size="10px" lengthAdjust="spacingAndGlyphs" textLength="86">A complex Object</text>	<text transform="translate(-504.5,-713.5)" x="523" y="767.38092" fill="#000000" font-family="sans-serif" font-size="10px" lengthAdjust="spacingAndGlyphs" textLength="0"/>	<text transform="translate(-504.5 -712.25)" x="556" y="761.95898" fill="#000000" font-family="sans-serif" font-size="10px" lengthAdjust="spacingAndGlyphs" textLength="58">Aggregation</text>	<text transform="translate(-504.5 -712.09)" x="637" y="761.95898" fill="#000000" font-family="sans-serif" font-size="10px" lengthAdjust="spacingAndGlyphs" textLength="107">List of Objects as Array</text>	<text transform="translate(-504.5,-713.5)" x="523" y="785.38092" fill="#000000" font-family="sans-serif" font-size="10px" lengthAdjust="spacingAndGlyphs" textLength="0"/>	<text transform="translate(-504.5 -712.19)" x="556" y="779.95898" fill="#000000" font-family="sans-serif" font-size="10px" lengthAdjust="spacingAndGlyphs" textLength="59">Composition</text>	<text transform="translate(-504.5 -712.09)" x="637" y="779.95898" fill="#000000" font-family="sans-serif" font-size="10px" lengthAdjust="spacingAndGlyphs" textLength="104">List of Objects as Map</text>	<text transform="translate(-504.5,-713.5)" x="523" y="803.38092" fill="#000000" font-family="sans-serif" font-size="10px" lengthAdjust="spacingAndGlyphs" textLength="0"/>	<text transform="translate(-504.5 -712.39)" x="556" y="797.95898" fill="#000000" font-family="sans-serif" font-size="10px" lengthAdjust="spacingAndGlyphs" textLength="54">Association</text>	<text transform="translate(-504.5 -712.11)" x="637" y="797.95898" fill="#000000" font-family="sans-serif" font-size="10px" lengthAdjust="spacingAndGlyphs" textLength="126">A complex Object as child</text>	<text transform="translate(-504.5,-713.5)" x="523" y="821.38092" fill="#000000" font-family="sans-serif" font-size="10px" lengthAdjust="spacingAndGlyphs" textLength="0"/>	<text transform="translate(-504.5 -712.14)" x="556" y="815.95898" fill="#000000" font-family="sans-serif" font-size="10px" lengthAdjust="spacingAndGlyphs" textLength="69">Specialization</text>	<text transform="translate(-504.5 -712.09)" x="637" y="815.95898" fill="#000000" font-family="sans-serif" font-size="10px" lengthAdjust="spacingAndGlyphs" textLength="147">An extension of another Object</text>	<line x1="6.5" x2="282.5" y1="20.078" y2="20.078" stroke="#000"/>	<line x1="6.5" x2="282.5" y1="38.078" y2="38.078" stroke="#000"/>	<line x1="6.5" x2="282.5" y1="56.078" y2="56.078" stroke="#000"/>	<line x1="6.5" x2="282.5" y1="74.078" y2="74.078" stroke="#000"/>	<line x1="6.5" x2="282.5" y1="92.078" y2="92.078" stroke="#000"/>	<line x1="48.5" x2="48.5" y1="7.5" y2="110.08" stroke="#000"/>	<line x1="129.5" x2="129.5" y1="7.5" y2="110.08" stroke="#000"/>	<path d="m20.871 26.751h12m-11.5-3.1729h11v11h-11z" fill="none" stroke="#000" stroke-width="1px"/>	<g transform="translate(0 1.5453)" fill="none" stroke="#000">		<path d="m24.935 47.446 5.6592-5.6592" stroke-linecap="square" stroke-width="1px"/>		<rect x="20.869" y="47.512" width="4" height="3.9606" ry="0"/>		<rect x="30.774" y="39.593" width="2" height="2" ry="0"/>	</g>	<path d="m21.038 88.97 11.784-11.784" fill="none" stroke="#000" stroke-linecap="square" stroke-width="1px"/>	<g transform="translate(0 .78224)" fill="none" stroke="#000">		<path d="m25.986 93.638h6.7885v6.7885z"/>		<path d="m19.701 106.75 9.6682-9.6682" stroke-linecap="square" stroke-width="1px"/>	</g>	<g transform="translate(0 1.3665)" fill="none" stroke="#000">		<path d="m24.935 65.602 5.6592-5.6592" stroke-linecap="square" stroke-width="1px"/>		<rect x="20.869" y="65.668" width="4" height="3.9606" ry="0"/>		<rect x="30.774" y="57.795" width="2" height="2" ry="0"/>	</g></svg><!--
+@startuml
+
+skinparam class {
+	BorderColor black
+	FontColor #50237f
+	BackgroundColor #f5f5f5
+	ArrowColor black
+}
+hide class circle
+
+skinparam stereotype {
+	CBackgroundColor white
+	EBackgroundColor white
+}
+
+skinparam legend {
+	BorderColor white
+	BackgroundColor white
+}
+
+class Device {
+	id: String
+	mode[0..1]: String
+	state[0..1]: DeviceState
+	additionalData[0..1]: Object
+}
+
+class Measurement {
+	code[0..1]: String
+	context[0..1]: ContextList
+	result[0..1]: Result
+	series: Series
+	ts: Date
+	additionalData[0..1]: Object
+}
+
+class Context {
+	limits[0..1]: Limits
+	namespace[0..1]: String
+	type[0..1]: ValueType
+	unit[0..1]: String
+	additionalData[0..1]: Object
+}
+
+class Limits {
+	lowerError[0..1]: Float | [Float]
+	lowerWarn[0..1]: Float | [Float]
+	target[0..1]:  Float | [Float]
+	upperError[0..1]: Float | [Float]
+	upperWarn[0..1]: Float | [Float]
+}
+
+class Series {
+	time[0..1]: [Number]
+	<values>[1..*]: [Boolean | Number | String]
+}
+
+class Part {
+	code[0..1]: String
+	id[0..1]: String
+	type[0..1]: PartType
+	typeId[0..1]: String
+	result[0..1]: Result
+	additionalData[0..1]: Object
+}
+
+enum DeviceState {
+	OK
+	INFO
+	WARN
+	ERROR
+	UNKNOWN
+}
+
+enum Result {
+	OK
+	NOK
+	UNKNOWN
+}
+
+enum PartType {
+	SINGLE
+	BATCH
+}
+
+enum ValueType {
+	BASE64
+	BOOLEAN
+	NUMBER
+	OTHER
+	REF
+	STRING
+}
+
+Measurement "1" *- - "0..1" Context : ContextList
+Context "1" - - "0..*" Limits
+
+
+sprite $aggregation jar:archimate/aggregation
+sprite $composition jar:archimate/composition
+sprite $specialisation jar:archimate/specialisation
+sprite $association jar:archimate/association
+sprite $object      jar:archimate/object
+
+legend right
+<img:legend.svg>
+endlegend
+
+
+class MeasurementPayload {
+	content-spec : String
+	device : Device
+	measurements : TimeMeasurement
+	part[0..1] : Part
+}
+
+class TimeMeasurement {
+	code[0..1]: String
+	context[0..1]: ContextList
+	result[0..1]: Result
+	series: TimeSeries
+	ts: Date
+	additionalData[0..1]: Object
+}
+
+class TimeSeries {
+	time: [Number]
+	<values>[1..*]: [Boolean | Number | String]
+}
+
+hide Measurement
+hide Series
+
+TimeMeasurement "1" *- - "0..1" Context : ContextList
+
+MeasurementPayload - - Device
+MeasurementPayload - - Part
+MeasurementPayload "1" o-right- "1..*" TimeMeasurement : Measurements
+
+Series <|- - TimeSeries
+
+TimeMeasurement - - TimeSeries
+
+@enduml
+
+PlantUML version 1.2018.01(Sun Jan 28 19:08:22 CET 2018)
+(EPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 10.0.1+10
+Operating System: Windows 10
+OS Version: 10.0
+Default Encoding: Cp1252
+Language: en
+Country: US
+--></g></svg>

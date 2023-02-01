@@ -1,0 +1,62 @@
+@startuml
+!include definitions.iuml
+
+class MessagePayload {
+	content-spec : String
+	device : Device
+	messages : Messages
+}
+
+class Message {
+	code : String
+	description[0..1] : String
+	hint[0..1] : String
+	origin[0..1] : String
+	severity[0..1] : Severity
+	source[0..1] : Source
+	state[0..1] : State
+	title[0..1] : String
+	ts : Date
+	type[0..1] : Type
+	additionalData[0..1]: Object
+}
+
+enum Severity {
+	HIGH
+	MEDIUM
+	LOW
+	UNKNOWN
+}
+
+enum State {
+	NEW
+	ENDED
+}
+
+enum Source {
+	DEVICE
+	TECHNICAL_INFO
+}
+
+enum Type {
+	INFO
+	WARNING
+	ERROR
+	UNKNOWN
+}
+
+MessagePayload -- Device
+MessagePayload "1" o-- "1..*" Message : Messages
+
+hide Context
+hide Limits
+hide Measurement
+hide Part
+hide PartType
+hide Result
+hide Series
+hide ValueType
+
+Context "1" -left- "0..*" Limits
+
+@enduml
