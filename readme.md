@@ -167,7 +167,7 @@ The process message is the format to exchange data out of discrete processes. It
         "force": [0.8493, 0.566, 5455],
         "pressure": [0.8493, 0.566, 5455]
       }
-    }‚
+    }
   ]
 }
 ```
