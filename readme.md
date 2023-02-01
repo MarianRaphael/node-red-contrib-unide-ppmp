@@ -1,7 +1,6 @@
 # Node-RED PPMP node
 
 [![platform](https://img.shields.io/badge/platform-Node--RED-red)](https://nodered.org)
-![NPM version](https://badge.fury.io/js/node-red-dashboard.svg)
 ![NPM](https://img.shields.io/npm/l/node-red-dashboard)
 
 ## Pre-requisites
@@ -172,7 +171,7 @@ The process message is the format to exchange data out of discrete processes. It
 }
 ```
 
-#### Version 3‚
+#### Version 3
 
 [See schema](/schemas/v3/process_schema.md)
 
