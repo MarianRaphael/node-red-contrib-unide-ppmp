@@ -12,7 +12,7 @@ The Node-RED-PPMP requires [Node-RED](https://nodered.org) to be installed.
 
 To install the stable version use the `Menu - Manage palette` option and search for `node-red-unide-ppmp`, or run the following command in your Node-RED user directory - typically `~/.node-red`:
 
-    npm i node-red-
+    npm i node-red-contrib-unide-ppmp
 
 ## Exampels
 
@@ -26,8 +26,6 @@ The specification is structured into two payload formats: Measurement payload an
 
 The payload is meant to be transported via http as a json object. This allows for an easy integration into various backend systems.
 
-<img title="" src="file:///Users/marian/Desktop/Screenshot%202023-02-01%20at%2011.56.08.png" alt="" data-align="center">
-
 ### Measurement Payload
 
 The measurement message is the format to exchange simple (non-structured, non-complex ) measurement data. It also allows to transport multiple measurement data (eg. values over time), called 'series'.
@@ -35,6 +33,8 @@ The measurement message is the format to exchange simple (non-structured, non-co
 #### Version 2
 
 [See schema](/schemas/v2/measurement_schema.md)
+
+<img src="/images/v2/measurementPayload.svg" title="" alt="" data-align="center">
 
 ##### Example - Measurement v2
 
@@ -67,20 +67,22 @@ The measurement message is the format to exchange simple (non-structured, non-co
 
 [See schema](/schemas/v3/measurement_schema.md)
 
+<img src="/images/v3/measurementPayload.svg" title="" alt="" data-align="center">
+
 ##### Example - Measurement v3
 
 ```json
 {
   "content-spec": "urn:spec://eclipse.org/unide/measurement-message#v3",
-  "device": { 
-    "id": "a4927dad-58d4-4580-b460-79cefd56775b" 
+  "device": {
+    "id": "a4927dad-58d4-4580-b460-79cefd56775b"
   },
   "measurements": [
     {
       "ts": "2023-02-01T19:15:28.607Z",
-      "series": { 
+      "series": {
         "time": [0],
-        "temp": [0.8493] 
+        "temp": [0.8493]
       }
     }
   ]
@@ -94,6 +96,8 @@ The main purpose of the machine message format is to allow devices and integrato
 #### Version 2
 
 [See schema](/schemas/v2/message_schema.md)
+
+!<img src="/images/v2/messagePayload.svg" title="" alt="" data-align="center">
 
 ##### Example Machine Message v2
 
@@ -116,8 +120,45 @@ The main purpose of the machine message format is to allow devices and integrato
 
 [See schema](/schemas/v3/message_schema.md)
 
+<img src="/images/v3/messagePayload.svg" title="" alt="" data-align="center">
+
 ##### Example Machine Message v3
 
-Process Message Payload
+```json
+{
+  "content-spec": "urn:spec://eclipse.org/unide/machine-message#v3",
+  "device": { 
+    "id": "2ca5158b-8350-4592-bff9-755194497d4e" 
+  },
+  "messages": [
+    { 
+      "ts": "2023-02-01T19:44:58.969Z", 
+      "code": "testCode"
+    }
+  ]
+}
+```
 
-Version 2
+## Process Message Payload
+
+The process message is the format to exchange data out of discrete processes. It also allows to transport process information, part information and measurement data for each phase of the process
+
+#### Version 2
+
+[See schema](/schemas/v2/process_schema.md)
+
+<img src="/images/v2/processPayload.svg" title="" alt="" data-align="center">
+
+##### Example Process Message v2
+
+...
+
+#### Version 3
+
+[See schema](/schemas/v3/process_schema.md)
+
+<img src="/images/v3/processPayload.svg" title="" alt="" data-align="center">
+
+##### Example Process Message v3
+
+....
