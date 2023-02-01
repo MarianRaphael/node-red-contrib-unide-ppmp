@@ -1,4 +1,19 @@
-# Production Performance Management Protocol (PPMP)
+# Node-RED PPMP node
+[![platform](https://img.shields.io/badge/platform-Node--RED-red)](https://nodered.org)
+![NPM version](https://badge.fury.io/js/node-red-dashboard.svg)
+![NPM](https://img.shields.io/npm/l/node-red-dashboard)
+
+## Pre-requisites
+
+The Node-RED-PPMP requires [Node-RED](https://nodered.org) to be installed.
+
+## Install
+
+To install the stable version use the `Menu - Manage palette` option and search for `node-red-unide-ppmp`, or run the following command in your Node-RED user directory - typically `~/.node-red`:
+
+    npm i node-red-
+
+## Production Performance Management Protocol (PPMP)
 
 The Production Performance Management Protocol (PPMP) specifies a format that allows to capture data that is required to do performance analysis of production facilities. It allows monitoring backends to collect and evaluate key metrics of machines in the context of a production process. It is doing that by allowing to relate the machine status with currently produced parts.
 
@@ -8,7 +23,7 @@ The payload is meant to be transported via http as a json object. This allows fo
 
 <img title="" src="file:///Users/marian/Desktop/Screenshot%202023-02-01%20at%2011.56.08.png" alt="" data-align="center">
 
-## Measurement Payload
+### Measurement Payload
 
 The measurement message is the format to exchange simple (non-structured, non-complex ) measurement data. It also allows to transport multiple measurement data (eg. values over time), called 'series'.
 
@@ -48,7 +63,7 @@ The measurement message is the format to exchange simple (non-structured, non-co
 
 ...
 
-# Machine Message Payload
+### Machine Message Payload
 
 The main purpose of the machine message format is to allow devices and integrators to send messages containing an interpretation of measurement data or status.
 
@@ -71,7 +86,7 @@ The main purpose of the machine message format is to allow devices and integrato
 }
 ```
 
-### Version 3
+#### Version 3
 
 [See schema](/schemas/v3/message_schema.md)
 
