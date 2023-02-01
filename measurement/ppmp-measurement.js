@@ -7,7 +7,11 @@ module.exports = function(RED) {
       var time = new Date().toISOString();
       if (node.version == "2") {
         node.on('input', function(msg) {
-          var series = { "$_time" : [0] };
+          var series = { "$_time" : [] };
+          var inputEntries = Object.entries(msg.payload);
+          for (var i = 0; i < inputEntries[0][1].length; i++) {
+            series.$_time.push(i);
+          }
           Object.entries(msg.payload).forEach(([name, number]) => {
             series[name] = number;
           });
@@ -26,7 +30,11 @@ module.exports = function(RED) {
         });
       } if (node.version == "3") {
         node.on('input', function(msg) {
-          var series = { "time": [0] };
+          var series = { "time": [] };
+          var inputEntries = Object.entries(msg.payload);
+          for (var i = 0; i < inputEntries[0][1].length; i++) {
+            series.time.push(i);
+          }
           Object.entries(msg.payload).forEach(([name, number]) => {
             series[name] = number;
           });
