@@ -1,26 +1,3 @@
-<script type="text/javascript">
-    RED.nodes.registerType('PPMPValidation', {
-        category: 'function',
-        color: "rgb(204, 255, 204)",
-        defaults: {
-            version: {value:"3", required:true},
-            type: {value:"process", required:true},
-        },
-        inputs: 1,
-        outputs: 2,
-        icon: "function.svg",
-        label: function() {
-            return this.name || "PPMP-Validation";
-        },
-        oneditprepare: function() {
-            var node = this;
-            $('#node-input-schema').on('change', function() {
-                node.dirty = true;
-            });
-        }
-    });
-</script>
-
 <script type="text/html" data-template-name="PPMP-Validation">
     <div class="form-row">
         <label for="node-input-version"><i class="fa fa-tag"></i> Version</label>
@@ -30,11 +7,27 @@
         </select>
     </div>
     <div class="form-row">
-        <label for="node-input-type><i class="fa fa-tag"></i> Type</label>
+        <label for="node-input-type"><i class="fa fa-tag"></i> Type</label>
         <select type="text" id="node-input-type" placeholder="Select type">
-            <option value="process">Process</option>
-            <option value="measurement">Measurement</option>
-            <option value="message">Message</option>
+            <option value="process">process</option>
+            <option value="measurement">measurement</option>
+            <option value="message">message</option>
+        </select>
     </div>
 </script>
 <script>
+    RED.nodes.registerType('PPMP-Validation', {
+        category: 'function',
+        color: "rgb(204, 255, 204)",
+        icon: "function.svg",
+        defaults: {
+            version: {value:"2", required:true},
+            type: {value:"process", required:true},
+            inputs: {value:1, required:true},
+            outputs: {value:1, required:true}
+        },
+        label: function () {
+            return this.name||"PPMP-Validation";
+        }
+    });
+</script>
