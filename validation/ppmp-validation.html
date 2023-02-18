@@ -1,0 +1,40 @@
+<script type="text/javascript">
+    RED.nodes.registerType('PPMPValidation', {
+        category: 'function',
+        color: "rgb(204, 255, 204)",
+        defaults: {
+            version: {value:"3", required:true},
+            type: {value:"process", required:true},
+        },
+        inputs: 1,
+        outputs: 2,
+        icon: "function.svg",
+        label: function() {
+            return this.name || "PPMP-Validation";
+        },
+        oneditprepare: function() {
+            var node = this;
+            $('#node-input-schema').on('change', function() {
+                node.dirty = true;
+            });
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="PPMP-Validation">
+    <div class="form-row">
+        <label for="node-input-version"><i class="fa fa-tag"></i> Version</label>
+        <select type="text" id="node-input-version" placeholder="Select version">
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+    </div>
+    <div class="form-row">
+        <label for="node-input-type><i class="fa fa-tag"></i> Type</label>
+        <select type="text" id="node-input-type" placeholder="Select type">
+            <option value="process">Process</option>
+            <option value="measurement">Measurement</option>
+            <option value="message">Message</option>
+    </div>
+</script>
+<script>

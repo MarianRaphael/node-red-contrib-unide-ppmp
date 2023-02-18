@@ -1,7 +1,8 @@
 # Node-RED PPMP node
 
 [![platform](https://img.shields.io/badge/platform-Node--RED-red)](https://nodered.org)
-![NPM](https://img.shields.io/npm/l/node-red-dashboard)
+![NPM](https://img.shields.io/npm/l/node-red-contrib-unide-ppmp)
+![npm](https://img.shields.io/npm/v/node-red-contrib-unide-ppmp)
 
 ## Pre-requisites
 
@@ -16,11 +17,11 @@ To install the stable version use the `Menu - Manage palette` option and search 
 
 ## Production Performance Management Protocol (PPMP)
 
-The Production Performance Management Protocol (PPMP) specifies a format that allows to capture data that is required to do performance analysis of production facilities. It allows monitoring backends to collect and evaluate key metrics of machines in the context of a production process. It is doing that by allowing to relate the machine status with currently produced parts.
+The Production Performance Management Protocol (PPMP) is a standardized format for capturing production-related data to analyze the performance of production facilities. It enables monitoring systems to collect and evaluate key metrics of machines in the context of a production process by correlating the machine status with the currently produced parts and the process information. 
 
-The specification is structured into two payload formats: Measurement payload and message payload. The Measurement payload contains measurements from machines such as the temperature of a machine at a specific point in time together with the currently produced part. The message payload contains arbitrary messages sent by a machine, e.g. alerts or the like.
+PPMP is composed of three payload formats: measurement payload, message payload, and process payload. The measurement payload contains machine measurements such as temperature and the produced part, while the message payload can be used to send arbitrary messages like alerts. 
 
-The payload is meant to be transported via http as a json object. This allows for an easy integration into various backend systems.
+The process payload contains data about the production process, such as the product recipe, the order of operations, and the machine parameters. The payload is transported via JSON object, facilitating integration with different backend systems.
 
 ### Measurement Payload
 
