@@ -15,14 +15,14 @@
         </select>
     </div>
 </script>
-<script>
+<script type="text/javascript">
     RED.nodes.registerType('PPMP-Validation', {
         category: 'function',
         color: "rgb(204, 255, 204)",
         icon: "function.svg",
         defaults: {
             version: {value:"2", required:true},
-            type: {value:"process", required:true},
+            type: {value:"message", required:true},
             inputs: {value:1, required:true},
             outputs: {value:1, required:true}
         },
