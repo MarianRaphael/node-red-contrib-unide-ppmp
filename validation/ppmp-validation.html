@@ -7,26 +7,27 @@
         </select>
     </div>
     <div class="form-row">
-        <label for="node-input-type"><i class="fa fa-tag"></i> Type</label>
-        <select type="text" id="node-input-type" placeholder="Select type">
-            <option value="process">process</option>
+        <label for="node-input-class"><i class="fa fa-tag"></i> Type</label>
+        <select type="text" id="node-input-class" placeholder="Select type">
             <option value="measurement">measurement</option>
+            <option value="process">process</option>
             <option value="message">message</option>
         </select>
     </div>
 </script>
-<script type="text/javascript">
-    RED.nodes.registerType('PPMP-Validation', {
-        category: 'function',
-        color: "rgb(204, 255, 204)",
+<script>
+    RED.nodes.registerType("PPMP-Validation",{
+        category: "function",
+        color:"rgb(204, 255, 204)",
         icon: "function.svg",
         defaults: {
-            version: {value:"2", required:true},
-            type: {value:"message", required:true},
+            name: {value:""},
+            version: {value:"3", required:true},
+            class: {value:"message", required:true},
             inputs: {value:1, required:true},
             outputs: {value:1, required:true}
         },
-        label: function () {
+        label: function() {
             return this.name||"PPMP-Validation";
         }
     });

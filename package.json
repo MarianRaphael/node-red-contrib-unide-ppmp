@@ -3,7 +3,7 @@
   "version": "1.1.2",
   "description": "The Production Performance Management Protocol (PPMP) is a communication protocol for exchanging production-related data between industrial automation systems. It helps improve efficiency, reduce downtime, and enhance product quality by providing a standardized framework for data collection and analysis.",
   "node-red": {
-    "version": ">=1.0.0",
+    "version": ">=1.3.0",
     "nodes": {
       "ppmp measurement": "/measurement/ppmp-measurement.js",
       "ppmp message": "/message/ppmp-message.js",
@@ -23,7 +23,9 @@
   },
   "dependencies": {
     "ajv": "^8.12.0",
-    "fs": "^0.0.2"
+    "ajv-formats": "^2.1.1",
+    "fs": "^0.0.2",
+    "path": "^0.12.7"
   },
   "keywords": [
     "node-red",

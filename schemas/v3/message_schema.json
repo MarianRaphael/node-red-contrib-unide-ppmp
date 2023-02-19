@@ -7,7 +7,37 @@
 			"description": "Defines what the format version is"
 		},
 		"device": {
-			"$ref": "definitions.json#/definitions/device"
+			"type": "object",
+			"description": "Contains information about the device",
+			"properties": {
+				"id": {
+					"type": "string",
+					"description": "The unique identification of the device. As this is used to identify a device independently from time or location the id itself must be stable and unique. Recommended is to use a universally unique identifier (UUID).",
+					"maxLength": 36
+				},
+				"mode": {
+					"type": "string",
+					"description": "The operational mode indicates the functional state of the device. This is not restrictected to enum, since it is dependent on the machine, process or use case. Examples are 'auto', 'manual', 'test', 'wait', 'maintenance', 'run', 'stop', 'other' or 'unknown'"
+				},
+				"state": {
+					"type": "string",
+					"enum": [
+						"OK",
+						"INFO",
+						"WARN",
+						"ERROR",
+						"UNKNOWN"
+					],
+					"default": "UNKNOWN",
+					"description": "The state describes the technical condition of a device."
+				},
+				"additionalData": {
+					"type": "object"
+				}
+			},
+			"required": [
+				"id"
+			]
 		},
 		"messages": {
 			"minItems": 1,
@@ -17,7 +47,9 @@
 				"description": "Collection of messages",
 				"properties": {
 					"code": {
-						"$ref": "definitions.json#/definitions/code"
+						"type": "string",
+						"description": "The code is an addendum to the result which allows to pass information in the case the result was NOK. The value often stems from the integrated system e.g. a PLC code",
+						"maxLength": 128
 					},
 					"description": {
 						"type": "string",

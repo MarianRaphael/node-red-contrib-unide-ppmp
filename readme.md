@@ -1,4 +1,4 @@
-# Node-RED PPMP node
+# Node-RED Bosch Unide PPMP node
 
 [![platform](https://img.shields.io/badge/platform-Node--RED-red)](https://nodered.org)
 ![NPM](https://img.shields.io/npm/l/node-red-contrib-unide-ppmp)
